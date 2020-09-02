@@ -177,6 +177,39 @@
         }
       },
       {
+        "HashCode": 378951343,
+        "Kind": "Components.Component",
+        "Name": "WebApp.Pages.Agenda",
+        "AssemblyName": "WebApp",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Agenda"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "WebApp.Pages.Agenda"
+        }
+      },
+      {
+        "HashCode": 869135488,
+        "Kind": "Components.Component",
+        "Name": "WebApp.Pages.Agenda",
+        "AssemblyName": "WebApp",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "WebApp.Pages.Agenda"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "WebApp.Pages.Agenda",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
         "HashCode": -1047113303,
         "Kind": "Components.Component",
         "Name": "WebApp.Shared.MainLayout",
@@ -273,39 +306,6 @@
         }
       },
       {
-        "HashCode": 787481779,
-        "Kind": "Components.Component",
-        "Name": "WebApp.Shared.NavMenu",
-        "AssemblyName": "WebApp",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "NavMenu"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "WebApp.Shared.NavMenu"
-        }
-      },
-      {
-        "HashCode": 1488845660,
-        "Kind": "Components.Component",
-        "Name": "WebApp.Shared.NavMenu",
-        "AssemblyName": "WebApp",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "WebApp.Shared.NavMenu"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "WebApp.Shared.NavMenu",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
         "HashCode": 1794288083,
         "Kind": "Components.Component",
         "Name": "WebApp.Shared.SurveyPrompt",
@@ -355,6 +355,39 @@
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
           "Common.TypeName": "WebApp.Shared.SurveyPrompt",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": 787481779,
+        "Kind": "Components.Component",
+        "Name": "WebApp.Shared.NavMenu",
+        "AssemblyName": "WebApp",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "NavMenu"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "WebApp.Shared.NavMenu"
+        }
+      },
+      {
+        "HashCode": 1488845660,
+        "Kind": "Components.Component",
+        "Name": "WebApp.Shared.NavMenu",
+        "AssemblyName": "WebApp",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "WebApp.Shared.NavMenu"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "WebApp.Shared.NavMenu",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },
@@ -14762,6 +14795,11 @@
       "FilePath": "c:\\Users\\niophey\\repos\\VirtualEventAgenda\\WebApp\\_Imports.razor",
       "TargetPath": "_Imports.razor",
       "FileKind": "componentImport"
+    },
+    {
+      "FilePath": "c:\\Users\\niophey\\repos\\VirtualEventAgenda\\WebApp\\Pages\\Agenda.razor",
+      "TargetPath": "Pages\\Agenda.razor",
+      "FileKind": "component"
     },
     {
       "FilePath": "c:\\Users\\niophey\\repos\\VirtualEventAgenda\\WebApp\\Pages\\FetchData.razor",
