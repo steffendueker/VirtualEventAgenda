@@ -1,7 +1,7 @@
 using System;
 using System.Collections.Generic;
 
-namespace WebApp.Models
+namespace VirtualEventAgenda.Models
 {
     public class AgendaTopic
     {
