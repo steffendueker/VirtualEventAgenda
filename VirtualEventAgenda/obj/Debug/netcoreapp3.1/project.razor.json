@@ -45,101 +45,55 @@
         }
       },
       {
-        "HashCode": -1683716987,
+        "HashCode": -55814205,
         "Kind": "Components.Component",
-        "Name": "VirtualEventAgenda.Pages.Counter",
+        "Name": "VirtualEventAgenda.Shared.SurveyPrompt",
         "AssemblyName": "VirtualEventAgenda",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "Counter"
+            "TagName": "SurveyPrompt"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "Title",
+            "TypeName": "System.String",
+            "Metadata": {
+              "Common.PropertyName": "Title"
+            }
           }
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "VirtualEventAgenda.Pages.Counter"
+          "Common.TypeName": "VirtualEventAgenda.Shared.SurveyPrompt"
         }
       },
       {
-        "HashCode": 341540703,
+        "HashCode": -25352925,
         "Kind": "Components.Component",
-        "Name": "VirtualEventAgenda.Pages.Counter",
+        "Name": "VirtualEventAgenda.Shared.SurveyPrompt",
         "AssemblyName": "VirtualEventAgenda",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "VirtualEventAgenda.Pages.Counter"
+            "TagName": "VirtualEventAgenda.Shared.SurveyPrompt"
           }
         ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "VirtualEventAgenda.Pages.Counter",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
-        "HashCode": 1997802195,
-        "Kind": "Components.Component",
-        "Name": "VirtualEventAgenda.Pages.FetchData",
-        "AssemblyName": "VirtualEventAgenda",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
+        "BoundAttributes": [
           {
-            "TagName": "FetchData"
+            "Kind": "Components.Component",
+            "Name": "Title",
+            "TypeName": "System.String",
+            "Metadata": {
+              "Common.PropertyName": "Title"
+            }
           }
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "VirtualEventAgenda.Pages.FetchData"
-        }
-      },
-      {
-        "HashCode": -1369707276,
-        "Kind": "Components.Component",
-        "Name": "VirtualEventAgenda.Pages.FetchData",
-        "AssemblyName": "VirtualEventAgenda",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "VirtualEventAgenda.Pages.FetchData"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "VirtualEventAgenda.Pages.FetchData",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
-        "HashCode": -1763551534,
-        "Kind": "Components.Component",
-        "Name": "VirtualEventAgenda.Pages.Index",
-        "AssemblyName": "VirtualEventAgenda",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "Index"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "VirtualEventAgenda.Pages.Index"
-        }
-      },
-      {
-        "HashCode": -662716901,
-        "Kind": "Components.Component",
-        "Name": "VirtualEventAgenda.Pages.Index",
-        "AssemblyName": "VirtualEventAgenda",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "VirtualEventAgenda.Pages.Index"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "VirtualEventAgenda.Pages.Index",
+          "Common.TypeName": "VirtualEventAgenda.Shared.SurveyPrompt",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },
@@ -273,55 +227,68 @@
         }
       },
       {
-        "HashCode": -55814205,
+        "HashCode": 1997802195,
         "Kind": "Components.Component",
-        "Name": "VirtualEventAgenda.Shared.SurveyPrompt",
+        "Name": "VirtualEventAgenda.Pages.FetchData",
         "AssemblyName": "VirtualEventAgenda",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "SurveyPrompt"
-          }
-        ],
-        "BoundAttributes": [
-          {
-            "Kind": "Components.Component",
-            "Name": "Title",
-            "TypeName": "System.String",
-            "Metadata": {
-              "Common.PropertyName": "Title"
-            }
+            "TagName": "FetchData"
           }
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "VirtualEventAgenda.Shared.SurveyPrompt"
+          "Common.TypeName": "VirtualEventAgenda.Pages.FetchData"
         }
       },
       {
-        "HashCode": -25352925,
+        "HashCode": -1369707276,
         "Kind": "Components.Component",
-        "Name": "VirtualEventAgenda.Shared.SurveyPrompt",
+        "Name": "VirtualEventAgenda.Pages.FetchData",
         "AssemblyName": "VirtualEventAgenda",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "VirtualEventAgenda.Shared.SurveyPrompt"
-          }
-        ],
-        "BoundAttributes": [
-          {
-            "Kind": "Components.Component",
-            "Name": "Title",
-            "TypeName": "System.String",
-            "Metadata": {
-              "Common.PropertyName": "Title"
-            }
+            "TagName": "VirtualEventAgenda.Pages.FetchData"
           }
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "VirtualEventAgenda.Shared.SurveyPrompt",
+          "Common.TypeName": "VirtualEventAgenda.Pages.FetchData",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": -1763551534,
+        "Kind": "Components.Component",
+        "Name": "VirtualEventAgenda.Pages.Index",
+        "AssemblyName": "VirtualEventAgenda",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Index"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "VirtualEventAgenda.Pages.Index"
+        }
+      },
+      {
+        "HashCode": -662716901,
+        "Kind": "Components.Component",
+        "Name": "VirtualEventAgenda.Pages.Index",
+        "AssemblyName": "VirtualEventAgenda",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "VirtualEventAgenda.Pages.Index"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "VirtualEventAgenda.Pages.Index",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },
@@ -14734,11 +14701,6 @@
       "FilePath": "c:\\Users\\niophey\\repos\\VirtualEventAgenda\\VirtualEventAgenda\\_Imports.razor",
       "TargetPath": "_Imports.razor",
       "FileKind": "componentImport"
-    },
-    {
-      "FilePath": "c:\\Users\\niophey\\repos\\VirtualEventAgenda\\VirtualEventAgenda\\Pages\\Counter.razor",
-      "TargetPath": "Pages\\Counter.razor",
-      "FileKind": "component"
     },
     {
       "FilePath": "c:\\Users\\niophey\\repos\\VirtualEventAgenda\\VirtualEventAgenda\\Pages\\Error.cshtml",

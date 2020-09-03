@@ -45,39 +45,6 @@
         }
       },
       {
-        "HashCode": 378951343,
-        "Kind": "Components.Component",
-        "Name": "WebApp.Pages.Agenda",
-        "AssemblyName": "WebApp",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "Agenda"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "WebApp.Pages.Agenda"
-        }
-      },
-      {
-        "HashCode": 869135488,
-        "Kind": "Components.Component",
-        "Name": "WebApp.Pages.Agenda",
-        "AssemblyName": "WebApp",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "WebApp.Pages.Agenda"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "WebApp.Pages.Agenda",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
         "HashCode": 377429395,
         "Kind": "Components.Component",
         "Name": "WebApp.Pages.Counter",
@@ -173,6 +140,39 @@
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
           "Common.TypeName": "WebApp.Pages.FetchData",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": 378951343,
+        "Kind": "Components.Component",
+        "Name": "WebApp.Pages.Agenda",
+        "AssemblyName": "WebApp",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Agenda"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "WebApp.Pages.Agenda"
+        }
+      },
+      {
+        "HashCode": 869135488,
+        "Kind": "Components.Component",
+        "Name": "WebApp.Pages.Agenda",
+        "AssemblyName": "WebApp",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "WebApp.Pages.Agenda"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "WebApp.Pages.Agenda",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },
