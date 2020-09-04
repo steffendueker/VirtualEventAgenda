@@ -1,11 +1,13 @@
 ﻿@page "/"
 @using VirtualEventAgenda.Models
 @using VirtualEventAgenda.Data
+@using System.Linq
 
 @inject JsonFileAgendaTopicService AgendaTopicsService
 
+@* TODO - get the event information out of a service/json?*@
 <h1>Agenda</h1>
-
+@* TODO - Format of the Description*@
 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis quo mollitia, reiciendis pariatur eligendi saepe sed, repudiandae, minima nostrum earum natus. Labore quos unde vel repellat magni iusto numquam libero!</p>
 
 <table class="table" width ="80%">
@@ -25,6 +27,7 @@
                     <td>@AgendaTopic.StartTime</td>
                     <td>@AgendaTopic.EndTime</td>
                     <td>@AgendaTopic.Title</td>
+                    @* // TODO - Check !Empty  *@
                     <td><a href="@AgendaTopic.PresentationUrl"><img src="/img/ppt.png" height="30px" /></a></td>
                     <td><a href="@AgendaTopic.TeamsUrl"><img src="/img/teams.png" height="30px"/></a></td>
                 </tr>
@@ -35,6 +38,7 @@
 @code {
     private IEnumerable<AgendaTopic> AgendaTopics;
 
+    // TODO Check - correct ?
     protected override  void OnInitialized()
     {
         AgendaTopics = AgendaTopicsService.GetAgendaTopics();

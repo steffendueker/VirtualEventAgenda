@@ -45,59 +45,6 @@
         }
       },
       {
-        "HashCode": -55814205,
-        "Kind": "Components.Component",
-        "Name": "VirtualEventAgenda.Shared.SurveyPrompt",
-        "AssemblyName": "VirtualEventAgenda",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "SurveyPrompt"
-          }
-        ],
-        "BoundAttributes": [
-          {
-            "Kind": "Components.Component",
-            "Name": "Title",
-            "TypeName": "System.String",
-            "Metadata": {
-              "Common.PropertyName": "Title"
-            }
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "VirtualEventAgenda.Shared.SurveyPrompt"
-        }
-      },
-      {
-        "HashCode": -25352925,
-        "Kind": "Components.Component",
-        "Name": "VirtualEventAgenda.Shared.SurveyPrompt",
-        "AssemblyName": "VirtualEventAgenda",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "VirtualEventAgenda.Shared.SurveyPrompt"
-          }
-        ],
-        "BoundAttributes": [
-          {
-            "Kind": "Components.Component",
-            "Name": "Title",
-            "TypeName": "System.String",
-            "Metadata": {
-              "Common.PropertyName": "Title"
-            }
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "VirtualEventAgenda.Shared.SurveyPrompt",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
         "HashCode": 625058237,
         "Kind": "Components.Component",
         "Name": "VirtualEventAgenda.Shared.MainLayout",
@@ -223,6 +170,59 @@
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
           "Common.TypeName": "VirtualEventAgenda.Shared.NavMenu",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": -55814205,
+        "Kind": "Components.Component",
+        "Name": "VirtualEventAgenda.Shared.SurveyPrompt",
+        "AssemblyName": "VirtualEventAgenda",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "SurveyPrompt"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "Title",
+            "TypeName": "System.String",
+            "Metadata": {
+              "Common.PropertyName": "Title"
+            }
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "VirtualEventAgenda.Shared.SurveyPrompt"
+        }
+      },
+      {
+        "HashCode": -25352925,
+        "Kind": "Components.Component",
+        "Name": "VirtualEventAgenda.Shared.SurveyPrompt",
+        "AssemblyName": "VirtualEventAgenda",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "VirtualEventAgenda.Shared.SurveyPrompt"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "Title",
+            "TypeName": "System.String",
+            "Metadata": {
+              "Common.PropertyName": "Title"
+            }
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "VirtualEventAgenda.Shared.SurveyPrompt",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },

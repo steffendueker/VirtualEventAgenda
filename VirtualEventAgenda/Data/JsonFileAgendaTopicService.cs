@@ -28,6 +28,7 @@ namespace VirtualEventAgenda.Data
         {
             using(var jsonFileReader = File.OpenText(JsonFileName))
             {
+                // TODO: Sort by OrderID
                 return JsonSerializer.Deserialize<AgendaTopic[]>(jsonFileReader.ReadToEnd(),
                     new JsonSerializerOptions
                     {
@@ -35,6 +36,9 @@ namespace VirtualEventAgenda.Data
                     });
             }
         }
+
+        // TODO: Save to JSON
+        
         
     }
 }
