@@ -2,8 +2,10 @@
   "ExpandedNodes": [
     "",
     "\\VirtualEventAgenda",
-    "\\WebApp-old"
+    "\\VirtualEventAgenda\\bin\\Debug",
+    "\\VirtualEventAgenda\\bin\\Debug\\netcoreapp3.1",
+    "\\VirtualEventAgenda\\bin\\Release"
   ],
-  "SelectedNode": "\\WebApp-old\\WebApp.csproj",
+  "SelectedNode": "\\VirtualEventAgenda",
   "PreviewInSolutionExplorer": false
 }

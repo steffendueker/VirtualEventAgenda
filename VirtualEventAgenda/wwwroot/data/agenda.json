@@ -1,22 +1,22 @@
-[
-    {
-        "id":1,
-        "Title":"Begrüßung",
-        "OrderID":1,
-        "Description":"Kurze Einleitung und Vorstellung",
-        "StartTime" : "09:00",
-        "EndTime": "09:30",
-        "TeamsUrl":"https://www.microsoft.com",
-        "PresentationUrl":"https://www.microsoft.com"
-    },
-    {
-        "id":2,
-        "Title":"Intro Azure IaaS Services",
-        "OrderID":3,
-        "Description":"L100 Intro in Azure IaaS Services mit vielen Demos",
-        "StartTime" : "09:30",
-        "EndTime": "11:00",
-        "TeamsUrl":"https://www.microsoft.com",
-        "PresentationUrl":"https://www.microsoft.com"
-    }
+﻿[
+  {
+    "Id": 0,
+    "Title": "Begr\u00FC\u00DFung",
+    "OrderId": null,
+    "Description": "Kurze Einleitung und Vorstellung",
+    "StartTime": "09:00",
+    "EndTime": "09:30",
+    "TeamsUrl": "https://www.microsoft.com",
+    "PresentationUrl": "https://www.microsoft.com"
+  },
+  {
+    "Id": 0,
+    "Title": "Intro Azure IaaS Services",
+    "OrderId": null,
+    "Description": "L100 Intro in Azure IaaS Services mit vielen Demos",
+    "StartTime": "09:30",
+    "EndTime": "11:00",
+    "TeamsUrl": "https://www.microsoft.com",
+    "PresentationUrl": "https://www.microsoft.com"
+  }
 ]

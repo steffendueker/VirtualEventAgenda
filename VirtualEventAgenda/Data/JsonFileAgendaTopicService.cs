@@ -3,6 +3,7 @@ using System.IO;
 using System.Threading.Tasks;
 using System.Net.Http;
 using System.Linq;
+using System.Text;
 using System.Text.Json;
 using System.Collections.Generic;
 using VirtualEventAgenda.Models;
@@ -26,19 +27,31 @@ namespace VirtualEventAgenda.Data
 
         public IEnumerable<AgendaTopic> GetAgendaTopics()
         {
-            using(var jsonFileReader = File.OpenText(JsonFileName))
-            {
-                // TODO: Sort by OrderID
-                return JsonSerializer.Deserialize<AgendaTopic[]>(jsonFileReader.ReadToEnd(),
-                    new JsonSerializerOptions
-                    {
-                        PropertyNameCaseInsensitive = true
-                    });
-            }
+            var result = GetAgendaTopicsAsync().Result;
+            return result;
         }
 
-        // TODO: Save to JSON
+        public async Task<AgendaTopic[]> GetAgendaTopicsAsync()
+        {
+            try
+            {
+                var data = await File.ReadAllTextAsync(JsonFileName, Encoding.UTF8).ConfigureAwait(false);
+                var result = JsonSerializer.Deserialize<AgendaTopic[]>(data);
+                return result.OrderBy(t => t.OrderId).ToArray();        
+            }
+            catch (Exception ex)
+            {
+                return null;
+            }                       
+        }
         
+        public async Task SaveAgendaTopicsAsync(AgendaTopic[] topics)
+        {
+            var json = JsonSerializer.Serialize(topics, new JsonSerializerOptions {
+                WriteIndented = true
+            });
+            await File.WriteAllTextAsync(JsonFileName, json, Encoding.UTF8).ConfigureAwait(false);            
+        }
         
     }
 }

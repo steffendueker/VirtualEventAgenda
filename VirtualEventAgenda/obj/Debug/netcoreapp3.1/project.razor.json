@@ -45,6 +45,105 @@
         }
       },
       {
+        "HashCode": 1997802195,
+        "Kind": "Components.Component",
+        "Name": "VirtualEventAgenda.Pages.FetchData",
+        "AssemblyName": "VirtualEventAgenda",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "FetchData"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "VirtualEventAgenda.Pages.FetchData"
+        }
+      },
+      {
+        "HashCode": -1369707276,
+        "Kind": "Components.Component",
+        "Name": "VirtualEventAgenda.Pages.FetchData",
+        "AssemblyName": "VirtualEventAgenda",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "VirtualEventAgenda.Pages.FetchData"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "VirtualEventAgenda.Pages.FetchData",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": -1763551534,
+        "Kind": "Components.Component",
+        "Name": "VirtualEventAgenda.Pages.Index",
+        "AssemblyName": "VirtualEventAgenda",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Index"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "VirtualEventAgenda.Pages.Index"
+        }
+      },
+      {
+        "HashCode": -662716901,
+        "Kind": "Components.Component",
+        "Name": "VirtualEventAgenda.Pages.Index",
+        "AssemblyName": "VirtualEventAgenda",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "VirtualEventAgenda.Pages.Index"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "VirtualEventAgenda.Pages.Index",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": 471379046,
+        "Kind": "Components.Component",
+        "Name": "VirtualEventAgenda.Pages.BuildAgenda",
+        "AssemblyName": "VirtualEventAgenda",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "BuildAgenda"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "VirtualEventAgenda.Pages.BuildAgenda"
+        }
+      },
+      {
+        "HashCode": 1447646910,
+        "Kind": "Components.Component",
+        "Name": "VirtualEventAgenda.Pages.BuildAgenda",
+        "AssemblyName": "VirtualEventAgenda",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "VirtualEventAgenda.Pages.BuildAgenda"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "VirtualEventAgenda.Pages.BuildAgenda",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
         "HashCode": 625058237,
         "Kind": "Components.Component",
         "Name": "VirtualEventAgenda.Shared.MainLayout",
@@ -141,39 +240,6 @@
         }
       },
       {
-        "HashCode": -2079520392,
-        "Kind": "Components.Component",
-        "Name": "VirtualEventAgenda.Shared.NavMenu",
-        "AssemblyName": "VirtualEventAgenda",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "NavMenu"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "VirtualEventAgenda.Shared.NavMenu"
-        }
-      },
-      {
-        "HashCode": 1183664742,
-        "Kind": "Components.Component",
-        "Name": "VirtualEventAgenda.Shared.NavMenu",
-        "AssemblyName": "VirtualEventAgenda",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "VirtualEventAgenda.Shared.NavMenu"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "VirtualEventAgenda.Shared.NavMenu",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
         "HashCode": -55814205,
         "Kind": "Components.Component",
         "Name": "VirtualEventAgenda.Shared.SurveyPrompt",
@@ -227,68 +293,35 @@
         }
       },
       {
-        "HashCode": 1997802195,
+        "HashCode": -2079520392,
         "Kind": "Components.Component",
-        "Name": "VirtualEventAgenda.Pages.FetchData",
+        "Name": "VirtualEventAgenda.Shared.NavMenu",
         "AssemblyName": "VirtualEventAgenda",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "FetchData"
+            "TagName": "NavMenu"
           }
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "VirtualEventAgenda.Pages.FetchData"
+          "Common.TypeName": "VirtualEventAgenda.Shared.NavMenu"
         }
       },
       {
-        "HashCode": -1369707276,
+        "HashCode": 1183664742,
         "Kind": "Components.Component",
-        "Name": "VirtualEventAgenda.Pages.FetchData",
+        "Name": "VirtualEventAgenda.Shared.NavMenu",
         "AssemblyName": "VirtualEventAgenda",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "VirtualEventAgenda.Pages.FetchData"
+            "TagName": "VirtualEventAgenda.Shared.NavMenu"
           }
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "VirtualEventAgenda.Pages.FetchData",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
-        "HashCode": -1763551534,
-        "Kind": "Components.Component",
-        "Name": "VirtualEventAgenda.Pages.Index",
-        "AssemblyName": "VirtualEventAgenda",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "Index"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "VirtualEventAgenda.Pages.Index"
-        }
-      },
-      {
-        "HashCode": -662716901,
-        "Kind": "Components.Component",
-        "Name": "VirtualEventAgenda.Pages.Index",
-        "AssemblyName": "VirtualEventAgenda",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "VirtualEventAgenda.Pages.Index"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "VirtualEventAgenda.Pages.Index",
+          "Common.TypeName": "VirtualEventAgenda.Shared.NavMenu",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },
@@ -14680,6 +14713,11 @@
     {
       "FilePath": "c:\\Users\\niophey\\repos\\VirtualEventAgenda\\VirtualEventAgenda\\Shared\\NavMenu.razor",
       "TargetPath": "Shared\\NavMenu.razor",
+      "FileKind": "component"
+    },
+    {
+      "FilePath": "c:\\Users\\niophey\\repos\\VirtualEventAgenda\\VirtualEventAgenda\\Pages\\BuildAgenda.razor",
+      "TargetPath": "Pages\\BuildAgenda.razor",
       "FileKind": "component"
     },
     {

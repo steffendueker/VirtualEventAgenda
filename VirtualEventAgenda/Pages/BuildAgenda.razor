@@ -1,0 +1,55 @@
+@page "/BuildAgenda"
+@using VirtualEventAgenda.Models
+@using VirtualEventAgenda.Data
+@using System.Linq
+
+@inject JsonFileAgendaTopicService AgendaTopicsService
+
+@* TODO - get the event information out of a service/json?*@
+<h1>Agenda Bearbeiten</h1>
+@* TODO - Format of the Description*@
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis quo mollitia, reiciendis pariatur eligendi saepe sed, repudiandae, minima nostrum earum natus. Labore quos unde vel repellat magni iusto numquam libero!</p>
+
+
+<table class="table" width ="80%">
+        <thead>
+            <tr>
+                <th>Von</th>
+                <th>Bis</th>
+                <th>Titel</th>
+                <th>Präsentation</th>
+                <th>Session</th>
+            </tr>
+        </thead>
+        <tbody>            
+            @foreach (var AgendaTopic in AgendaTopics.OrderBy(t => t.OrderId ?? int.MaxValue))
+            {
+                <tr>
+                    <td><input @bind="AgendaTopic.StartTime" /></td>
+                    <td><input @bind="AgendaTopic.EndTime" /></td>
+                    <td><input @bind="AgendaTopic.Title" /></td>
+                    @* // TODO - Check !Empty  *@
+                    <td><a href="@AgendaTopic.PresentationUrl"><img src="/img/ppt.png" height="30px" /></a></td>
+                    <td><a href="@AgendaTopic.TeamsUrl"><img src="/img/teams.png" height="30px"/></a></td>
+                </tr>
+            }
+        </tbody>
+    </table>
+    <button class="btn btn-primary" type="button" @onclick="HandleSubmit">Save</button>
+
+
+ @code {
+    private IEnumerable<AgendaTopic> AgendaTopics;
+
+    // TODO Check - correct ?
+    protected override  void OnInitialized()
+    {
+        AgendaTopics = AgendaTopicsService.GetAgendaTopics();
+    }
+
+    private void HandleSubmit() 
+    {
+        AgendaTopicsService.SaveAgendaTopicsAsync(AgendaTopics.ToArray()).Wait();
+    }
+     
+}
