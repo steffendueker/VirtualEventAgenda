@@ -18,14 +18,13 @@
             <th>Start</th>
             <th>End</th>
             <th>Title</th>
-            <th>Descirption</th>
         </tr>
     </thead>
     <tbody>
         @foreach (var AgendaTopic in AgendaTopics.OrderBy(t => t.OrderId ?? int.MaxValue))
         {
             <tr>
-                <td><button class="btn btn-sm btn-info" type="button" @onclick=" e => SelectAgendaTopic(AgendaTopic.Id.ToString())" data-toggle="modal" data-target="#AgandaTopicModal"><span class="glyphicon glyphicon-pencil">a</span>Edit</button></td>
+                <td><button class="btn btn-sm btn-info" type="button" @onclick=" e => SelectAgendaTopic(AgendaTopic.Id.ToString())" data-toggle="modal" data-target="#AgandaTopicModal"><span class="glyphicon glyphicon-pencil"></span>Edit</button></td>
                 <td>@AgendaTopic.StartTime</td>
                 <td>@AgendaTopic.EndTime</td>
                 <td>@AgendaTopic.Title</td>
@@ -53,31 +52,31 @@
                     <table>
                         <tr>
                             <td>Title:</td>
-                            <td><input @bind="selectedAgendaTopic.Title" /></td>
+                            <td><input @bind="selectedAgendaTopic.Title" class="form-text"/></td>
                         </tr>
                         <tr>
                             <td>Start:</td>
-                            <td><input @bind="selectedAgendaTopic.StartTime" /></td>
+                            <td><input @bind="selectedAgendaTopic.StartTime" class="form-text"/></td>
                         </tr>
                         <tr>
                             <td>End:</td>
-                            <td><input @bind="selectedAgendaTopic.EndTime" /></td>
+                            <td><input @bind="selectedAgendaTopic.EndTime" class="form-text" /></td>
                         </tr>
                         <tr>
                             <td>Description:</td>
-                            <td><textarea @bind="selectedAgendaTopic.Description" rows="5" /></td>
+                            <td><textarea @bind="selectedAgendaTopic.Description" rows="5" class="form-text" /></td>
                         </tr>
                         <tr>
                             <td>PPT-URL:</td>
-                            <td><textarea @bind="selectedAgendaTopic.PresentationUrl" rows="3" /></td>
+                            <td><textarea @bind="selectedAgendaTopic.PresentationUrl" rows="3" class="form-text" /></td>
                         </tr>
                         <tr>
                             <td>Teams-URL:</td>
-                            <td><textarea @bind="selectedAgendaTopic.TeamsUrl" rows="3" /></td>
+                            <td><textarea @bind="selectedAgendaTopic.TeamsUrl" rows="3" class="form-text" /></td>
                         </tr>
                         <tr>
                             <td>Order</td>
-                            <td><input @bind="selectedAgendaTopic.OrderId"  /></td>
+                            <td><input @bind="selectedAgendaTopic.OrderId"  class="form-text"/></td>
                         </tr>
                     </table>
                 </div>

@@ -136,12 +136,19 @@ app {
     top: 0.5rem;
 }
 
-.modal .card-img {
-    height: 500px;
+.modal .modal-header {
+    height: 70px;
+    background-color: lightgrey;
     vertical-align: bottom;
     background-position: center; /* Center the image */
     background-repeat: no-repeat; /* Do not repeat the image */
     background-size: cover; /* Resize the background image to cover the entire container */
+}
+
+.modal .modal-footer {
+    background-color: lightgray;
+}
+
 }
 
 @media (max-width: 767.98px) {
