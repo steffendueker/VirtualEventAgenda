@@ -14,9 +14,10 @@
 <table class="table" width ="80%">
         <thead>
             <tr>
-                <th>Von</th>
-                <th>Bis</th>
-                <th>Titel</th>
+                <th>Start</th>
+                <th>End</th>
+                <th>Title</th>
+                <th>Descirption</th>
                 <th>Präsentation</th>
                 <th>Session</th>
             </tr>
@@ -28,9 +29,10 @@
                     <td><input @bind="AgendaTopic.StartTime" /></td>
                     <td><input @bind="AgendaTopic.EndTime" /></td>
                     <td><input @bind="AgendaTopic.Title" /></td>
+                    <td><textarea @bind="AgendaTopic.Description" rows="3" /></td>
                     @* // TODO - Check !Empty  *@
-                    <td><a href="@AgendaTopic.PresentationUrl"><img src="/img/ppt.png" height="30px" /></a></td>
-                    <td><a href="@AgendaTopic.TeamsUrl"><img src="/img/teams.png" height="30px"/></a></td>
+                    <td><textarea @bind="AgendaTopic.PresentationUrl" rows="3" /></td>
+                    <td><input @bind="AgendaTopic.TeamsUrl" /></td>
                 </tr>
             }
         </tbody>
