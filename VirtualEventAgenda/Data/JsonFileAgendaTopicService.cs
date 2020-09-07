@@ -52,6 +52,6 @@ namespace VirtualEventAgenda.Data
             });
             await File.WriteAllTextAsync(JsonFileName, json, Encoding.UTF8).ConfigureAwait(false);            
         }
-        
+
     }
 }

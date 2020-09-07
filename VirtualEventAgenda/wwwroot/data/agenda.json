@@ -1,7 +1,17 @@
 ﻿[
   {
+    "Id": 4,
+    "Title": "Let\u0027s talk about DBs",
+    "OrderId": null,
+    "Description": null,
+    "StartTime": "13:00",
+    "EndTime": "14:30",
+    "TeamsUrl": null,
+    "PresentationUrl": null
+  },
+  {
     "Id": 1,
-    "Title": "Begrüßung",
+    "Title": "Begr\u00FC\u00DFung",
     "OrderId": 1,
     "Description": "Kurze Einleitung und Vorstellung",
     "StartTime": "09:00",
@@ -18,8 +28,7 @@
     "EndTime": "11:00",
     "TeamsUrl": "https://www.microsoft.com",
     "PresentationUrl": "https://www.microsoft.com"
-  }
-  ,
+  },
   {
     "Id": 3,
     "Title": "Intro Azure PaaS Services",

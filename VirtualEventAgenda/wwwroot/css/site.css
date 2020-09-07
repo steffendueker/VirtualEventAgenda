@@ -136,6 +136,14 @@ app {
     top: 0.5rem;
 }
 
+.modal .card-img {
+    height: 500px;
+    vertical-align: bottom;
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+}
+
 @media (max-width: 767.98px) {
     .main .top-row:not(.auth) {
         display: none;
