@@ -5,32 +5,68 @@
 
 @inject JsonFileAgendaTopicService AgendaTopicsService
 
-@* TODO - get the event information out of a service/json?*@
-<div class="w-75 p-3">
-<h1>Hackathon</h1>
-@* TODO - Format of the Description*@
-<div>
-<p class="text-left">
-in diesem Hackathon wollen wir praktisch durchspielen, was wir all schon oft theoretisch besprochen habe. Die Migration einer Applikation in die Cloud mit Azure Tools nach dem Microsoft Cloud Adoption Framework for Azure.</p>
-<p class="text-left">
-Wir starten mit dem Verständnis über die Kundensituation, machen ein Assessment der on-Premise Infrastruktur und Migrieren die komplette Applikation inkl. Datenbank in die Landing Zone in der Cloud. Das ganz machen wir aber nicht in Form von „Klick-Anleitungen“, sondern wir stellen und gestellten Herausforderungen und bringen unser Wissen zusammen um diese zu meistern!</p>
-<p class="text-left">
-Ergänzen werden wir das ganz mit ein paar Impulsvorträgen!
-</p>
-</div>
 
-@foreach (var AgendaTopic in AgendaTopics)
-{
-<div class="card" style="15rem">
-    <div class="card-body">
-        <h5 style="card-title">@AgendaTopic.Title</h5>
-        <h6 style="card-subtitle mb-2 text-muted">@AgendaTopic.StartTime - @AgendaTopic.EndTime</h6>
-        <p class="card-text">@AgendaTopic.Description</p>
-        <a href="@AgendaTopic.PresentationUrl" class="card-link"><img src="/img/ppt.png" height="30px" /></a>
-        <a href="@AgendaTopic.TeamsUrl" class="card-link"><img src="/img/teams.png" height="30px"/></a>
+<div class="w-75 p-3">
+    <h1>Hackathon</h1>
+    <div>
+        <p class="text-left">
+            in diesem Hackathon wollen wir praktisch durchspielen, was wir all schon oft theoretisch besprochen habe. Die Migration einer Applikation in die Cloud mit Azure Tools nach dem Microsoft Cloud Adoption Framework for Azure.
+        </p>
+        <p class="text-left">
+            Wir starten mit dem Verständnis über die Kundensituation, machen ein Assessment der on-Premise Infrastruktur und Migrieren die komplette Applikation inkl. Datenbank in die Landing Zone in der Cloud. Das ganz machen wir aber nicht in Form von „Klick-Anleitungen“, sondern wir stellen und gestellten Herausforderungen und bringen unser Wissen zusammen um diese zu meistern!
+        </p>
+        <p class="text-left">
+            Ergänzen werden wir das ganz mit ein paar Impulsvorträgen!
+        </p>
     </div>
-</div>    
-}
+
+    @foreach (var AgendaTopic in AgendaTopics)
+    {
+        <div class="card" style="15rem">
+            <div class="card-body">
+                <div class="card-header">
+                    <h5 class="card-title">@AgendaTopic.Title</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">@AgendaTopic.StartTime - @AgendaTopic.EndTime</h6>
+                </div>
+                <div class="card-body">
+                    <p class="card-text">@AgendaTopic.Description</p>
+                    @if (AgendaTopic.PresentationUrl != null)
+                    {
+                        <a href="@AgendaTopic.PresentationUrl" class="card-link"><img src="/img/ppt.png" height="30px" /></a>
+                    }
+                    @if (AgendaTopic.TeamsUrl != null)
+                    {
+                        <a href="@AgendaTopic.TeamsUrl" class="card-link"><img src="/img/teams.png" height="30px" /></a>
+                    }
+                </div>
+                @if (AgendaTopic.BreakOutSession != null)
+                {
+                    <div class="card-footer">
+                        <div class="card-deck">
+                            @foreach (var Breakout in @AgendaTopic.BreakOutSession)
+                            {
+                                <div class="card">
+                                    <div class="card-header">
+                                        <h6 class="card-title">@Breakout.Title</h6>
+                                    </div>
+                                    <div class="card-body">
+                                        <p class="card-text">@Breakout.Description</p>
+                                        @if (Breakout.TeamsUrl != null)
+                                        {
+                                            <a href="@Breakout.TeamsUrl" class="card-link"><img src="/img/teams.png" height="30px" /></a>
+                                        }
+                                    </div>
+                                </div>
+                            }
+                        </div>
+                    </div>
+                }
+
+            </div>
+        </div>
+        <p>&nbsp;</p>
+    }
+
 </div>
 
 @code {

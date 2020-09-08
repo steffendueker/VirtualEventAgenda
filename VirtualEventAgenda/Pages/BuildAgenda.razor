@@ -18,6 +18,7 @@
             <th>Start</th>
             <th>End</th>
             <th>Title</th>
+            <th>Order</th>
         </tr>
     </thead>
     <tbody>
@@ -28,6 +29,7 @@
                 <td>@AgendaTopic.StartTime</td>
                 <td>@AgendaTopic.EndTime</td>
                 <td>@AgendaTopic.Title</td>
+                <td>@AgendaTopic.OrderId</td>
             </tr>
         }
     </tbody>
@@ -98,7 +100,7 @@
     int maxID = 0;
     int? maxOrderID = 0;
 
-    // TODO Check - correct ?
+
     protected override void OnInitialized()
     {
         AgendaTopics = AgendaTopicsService.GetAgendaTopics().ToList();
@@ -124,6 +126,7 @@
 
     void DialogSave()
     {
+        //TODO Save does not work
         AgendaTopicsService.SaveAgendaTopicsAsync(AgendaTopics.ToArray()).Wait();
         showDialog = false;
     }
