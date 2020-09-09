@@ -21,12 +21,12 @@
     "PresentationUrl": "https://www.microsoft.com",
     "BreakOutSessions": [
       {
-        "Title": "Team A",
+        "Title": "Team 1",
         "Description": "Teams-Raum f\u00FCr das erste Team",
         "TeamsUrl": "https://www.microsoft.com"
       },
       {
-        "Title": "Team B",
+        "Title": "Team 1",
         "Description": "Teams-Raum f\u00FCr das zweite Team",
         "TeamsUrl": "https://www.microsoft.com"
       }

@@ -78,6 +78,39 @@
         }
       },
       {
+        "HashCode": 263787576,
+        "Kind": "Components.Component",
+        "Name": "VirtualEventAgenda.Pages.Details",
+        "AssemblyName": "VirtualEventAgenda",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Details"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "VirtualEventAgenda.Pages.Details"
+        }
+      },
+      {
+        "HashCode": 735467376,
+        "Kind": "Components.Component",
+        "Name": "VirtualEventAgenda.Pages.Details",
+        "AssemblyName": "VirtualEventAgenda",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "VirtualEventAgenda.Pages.Details"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "VirtualEventAgenda.Pages.Details",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
         "HashCode": -1763551534,
         "Kind": "Components.Component",
         "Name": "VirtualEventAgenda.Pages.Index",
@@ -14706,6 +14739,11 @@
       "FilePath": "c:\\Users\\niophey\\repos\\VirtualEventAgenda\\VirtualEventAgenda\\_Imports.razor",
       "TargetPath": "_Imports.razor",
       "FileKind": "componentImport"
+    },
+    {
+      "FilePath": "c:\\Users\\niophey\\repos\\VirtualEventAgenda\\VirtualEventAgenda\\Pages\\Details.razor",
+      "TargetPath": "Pages\\Details.razor",
+      "FileKind": "component"
     },
     {
       "FilePath": "c:\\Users\\niophey\\repos\\VirtualEventAgenda\\VirtualEventAgenda\\Pages\\Error.cshtml",
