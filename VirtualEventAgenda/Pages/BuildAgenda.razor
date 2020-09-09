@@ -10,8 +10,7 @@
 <table class="table" width="80%">
     <thead>
         <tr>
-            <th width="100px">Topic</th>
-            <th width="50px">BO</th>
+            <th>Breakouts</th>
             <th>Start</th>
             <th>End</th>
             <th>Title</th>
@@ -23,19 +22,16 @@
         {
             <tr>
                 <td>
-                    <button class="btn btn-sm btn-outline-info" type="button" @onclick=" e => SelectAgendaTopic(AgendaTopic.Id.ToString())" data-toggle="modal" data-target="#AgandaTopicModal">Edit</button>
-                </td>
-                <td>
                 @if (AgendaTopic.BreakOutSessions != null) {
-                    <button class="btn btn-sm btn-outline-info" type="button" @onclick=" e => SelectAgendaBreakOuts(AgendaTopic.Id.ToString())" data-toggle="modal" data-target="#BreakOutsModal">Edit</button>
+                    <button class="btn btn-sm " type="button" @onclick=" e => SelectAgendaBreakOuts(AgendaTopic.Id.ToString())" data-toggle="modal" data-target="#BreakOutsModal"><i class="material-icons" style="font-size:16px">mode_edit</i></button>
                 }else 
                 {
-                <button class="btn btn-sm btn-outline-success" type="button" @onclick=" e => SelectAgendaBreakOuts(AgendaTopic.Id.ToString())" data-toggle="modal" data-target="#BreakOutsModal">New</button>   
+                <button class="btn btn-sm" type="button" @onclick=" e => SelectAgendaBreakOuts(AgendaTopic.Id.ToString())" data-toggle="modal" data-target="#BreakOutsModal"><i class="material-icons" style="font-size:16px">add</i></button>   
                 }
                 </td>
                 <td>@AgendaTopic.StartTime</td>
                 <td>@AgendaTopic.EndTime</td>
-                <td>@AgendaTopic.Title</td>
+                <td><button class="btn btn-link btn-sm" type="button" @onclick=" e => SelectAgendaTopic(AgendaTopic.Id.ToString())" data-toggle="tooltip" titel="Click here to edit the Agendatopic!">@AgendaTopic.Title</button></td>
                 <td><input @bind="@AgendaTopic.OrderId" class="form-text-orderID"  /></td>
             </tr>
         }
