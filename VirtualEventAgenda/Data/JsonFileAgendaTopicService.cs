@@ -32,6 +32,8 @@ namespace VirtualEventAgenda.Data
         }
 
         public async Task<AgendaTopic[]> GetAgendaTopicsAsync()
+
+          
         {
             try
             {
