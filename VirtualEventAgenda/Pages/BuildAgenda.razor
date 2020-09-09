@@ -10,7 +10,8 @@
 <table class="table" width="80%">
     <thead>
         <tr>
-            <th></th>
+            <th width="100px">Topic</th>
+            <th width="50px">BO</th>
             <th>Start</th>
             <th>End</th>
             <th>Title</th>
@@ -21,7 +22,17 @@
         @foreach (var AgendaTopic in AgendaTopics.OrderBy(t => t.OrderId ?? int.MaxValue))
         {
             <tr>
-                <td><button class="btn btn-sm btn-info" type="button" @onclick=" e => SelectAgendaTopic(AgendaTopic.Id.ToString())" data-toggle="modal" data-target="#AgandaTopicModal">Edit</button></td>
+                <td>
+                    <button class="btn btn-sm btn-outline-info" type="button" @onclick=" e => SelectAgendaTopic(AgendaTopic.Id.ToString())" data-toggle="modal" data-target="#AgandaTopicModal">Edit</button>
+                </td>
+                <td>
+                @if (AgendaTopic.BreakOutSessions != null) {
+                    <button class="btn btn-sm btn-outline-info" type="button" @onclick=" e => SelectAgendaBreakOuts(AgendaTopic.Id.ToString())" data-toggle="modal" data-target="#BreakOutsModal">Edit</button>
+                }else 
+                {
+                <button class="btn btn-sm btn-outline-success" type="button" @onclick=" e => SelectAgendaBreakOuts(AgendaTopic.Id.ToString())" data-toggle="modal" data-target="#BreakOutsModal">New</button>   
+                }
+                </td>
                 <td>@AgendaTopic.StartTime</td>
                 <td>@AgendaTopic.EndTime</td>
                 <td>@AgendaTopic.Title</td>
@@ -87,12 +98,62 @@
     </div>
 }
 
+@if (showBreakOut)
+{
+<div class="modal fade show " id="SelectAgendaBreakOuts" style="display:block" role="dialog">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="AgandaTopicTitle">@selectedAgendaTopic.Title Breakouts</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close" @onclick="DialogBreakOutsCancel">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <h6>Breakouts:</h6>
+                @if(selectedAgendaTopic.BreakOutSessions != null) { 
+                    @foreach (var Session in selectedAgendaTopic.BreakOutSessions.ToList())
+                    {
+                        <div class="card">
+                            <div class="card-body">
+                                <table>
+                                    <tr>
+                                        <td>Title:</td>
+                                        <td><input @bind="Session.Title" class="form-text" /></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Descritpion:</td>
+                                        <td><input @bind="Session.Description" class="form-text" /></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Teams-Url:</td>
+                                        <td><input @bind="Session.TeamsUrl" class="form-text" /></td>
+                                    </tr>
+
+                                </table>
+                            </div>
+                        </div>
+                    }
+                }
+                <div class="modal-body">
+                    <button type="button" class="btn btn-primary" @onclick="AddBreakOutSession">New Breakout</button>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn" @onclick="DialogBreakOutsCancel">Cancel</button>
+                <button type="button" class="btn btn-danger" @onclick="DialogBreakOutsSave">Save</button>
+            </div>
+        </div>
+    </div>
+</div>
+}
 
 @code {
     private List<AgendaTopic> AgendaTopics;
     AgendaTopic selectedAgendaTopic;
     string selectedAgendaTopicID;
     bool showDialog = false;
+    bool showBreakOut = false;
     int maxID = 0;
     int? maxOrderID = 0;
 
@@ -109,8 +170,6 @@
         AgendaTopicsService.SaveAgendaTopicsAsync(AgendaTopics.ToArray()).Wait();
     }
 
-
-
     void SelectAgendaTopic(string AgendaTopicID)
     {
         selectedAgendaTopicID = AgendaTopicID;
@@ -118,20 +177,53 @@
         showDialog = true;
     }
 
+    void SelectAgendaBreakOuts(string AgendaTopicID)
+    {
+        selectedAgendaTopicID = AgendaTopicID;
+        selectedAgendaTopic = AgendaTopicsService.GetAgendaTopics().First(x => x.Id.ToString() == AgendaTopicID);
+        showBreakOut = true;
+    }
+
     void DialogCancel() => showDialog = false;
+
+    void DialogBreakOutsCancel() => showBreakOut = false;
+
 
     void DialogSave()
     {
         //Save the selected Item to the AgendaTopic
-        AgendaTopics.First(x => x.Id == selectedAgendaTopic.Id).Title  = selectedAgendaTopic.Title;
-        AgendaTopics.First(x => x.Id == selectedAgendaTopic.Id).StartTime  = selectedAgendaTopic.StartTime;
-        AgendaTopics.First(x => x.Id == selectedAgendaTopic.Id).EndTime  = selectedAgendaTopic.EndTime;
-        AgendaTopics.First(x => x.Id == selectedAgendaTopic.Id).PresentationUrl  = selectedAgendaTopic.PresentationUrl;
-        AgendaTopics.First(x => x.Id == selectedAgendaTopic.Id).TeamsUrl  = selectedAgendaTopic.TeamsUrl;
-        AgendaTopics.First(x => x.Id == selectedAgendaTopic.Id).OrderId  = selectedAgendaTopic.OrderId;
-        AgendaTopics.First(x => x.Id == selectedAgendaTopic.Id).Description = selectedAgendaTopic.Description;
+        var obj = AgendaTopics.First(x => x.Id == selectedAgendaTopic.Id);
+
+        obj.Title  = selectedAgendaTopic.Title;
+        obj.StartTime  = selectedAgendaTopic.StartTime;
+        obj.EndTime  = selectedAgendaTopic.EndTime;
+        obj.PresentationUrl  = selectedAgendaTopic.PresentationUrl;
+        obj.TeamsUrl  = selectedAgendaTopic.TeamsUrl;
+        obj.OrderId  = selectedAgendaTopic.OrderId;
+        obj.Description = selectedAgendaTopic.Description;
         AgendaTopicsService.SaveAgendaTopicsAsync(AgendaTopics.ToArray()).Wait();
         showDialog = false;
+    }
+
+    void DialogBreakOutsSave()
+    {
+        AgendaTopics.First(x => x.Id == selectedAgendaTopic.Id).BreakOutSessions = selectedAgendaTopic.BreakOutSessions;
+        AgendaTopicsService.SaveAgendaTopicsAsync(AgendaTopics.ToArray()).Wait();
+        showBreakOut = false;
+    }
+
+
+    void AddBreakOutSession()
+    {
+        BreakOut newEntry = new BreakOut();
+        @if(selectedAgendaTopic.BreakOutSessions != null)
+        {
+            selectedAgendaTopic.BreakOutSessions.Add(newEntry);
+        }else
+        {
+            selectedAgendaTopic.BreakOutSessions = new List<BreakOut>();
+        }
+
     }
 
     void NewAgendaTopic()
