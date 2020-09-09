@@ -119,3 +119,5 @@ C:\Users\niophey\repos\VirtualEventAgenda\VirtualEventAgenda\obj\Debug\netcoreap
 C:\Users\niophey\repos\VirtualEventAgenda\VirtualEventAgenda\obj\Debug\netcoreapp3.1\Razor\Shared\NavMenu.razor.g.cs
 C:\Users\niophey\repos\VirtualEventAgenda\VirtualEventAgenda\obj\Debug\netcoreapp3.1\Razor\Shared\SurveyPrompt.razor.g.cs
 C:\Users\niophey\repos\VirtualEventAgenda\VirtualEventAgenda\obj\Debug\netcoreapp3.1\Razor\_Imports.razor.g.cs
+C:\Users\niophey\repos\VirtualEventAgenda\VirtualEventAgenda\obj\Debug\netcoreapp3.1\RazorDeclaration\Pages\Details.razor.g.cs
+C:\Users\niophey\repos\VirtualEventAgenda\VirtualEventAgenda\obj\Debug\netcoreapp3.1\Razor\Pages\Details.razor.g.cs
