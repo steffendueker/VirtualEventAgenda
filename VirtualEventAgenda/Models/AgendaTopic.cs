@@ -25,7 +25,7 @@ namespace VirtualEventAgenda.Models
         public string TeamsUrl { get; set; }
         public string PresentationUrl { get; set; }
 
-        public List<BreakOut> BreakOutSession { get; set; }
+        public List<BreakOut> BreakOutSessions { get; set; }
 
         public override string ToString() => JsonSerializer.Serialize<AgendaTopic>(this);
     }

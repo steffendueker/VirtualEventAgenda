@@ -22,7 +22,7 @@
 
     @foreach (var AgendaTopic in AgendaTopics)
     {
-        <div class="card" style="15rem">
+        <div class="card">
             <div class="card-body">
                 <div class="card-header">
                     <h5 class="card-title">@AgendaTopic.Title</h5>
@@ -39,11 +39,11 @@
                         <a href="@AgendaTopic.TeamsUrl" class="card-link"><img src="/img/teams.png" height="30px" /></a>
                     }
                 </div>
-                @if (AgendaTopic.BreakOutSession != null)
+                @if (AgendaTopic.BreakOutSessions != null)
                 {
                     <div class="card-footer">
                         <div class="card-deck">
-                            @foreach (var Breakout in @AgendaTopic.BreakOutSession)
+                            @foreach (var Breakout in @AgendaTopic.BreakOutSessions)
                             {
                                 <div class="card">
                                     <div class="card-header">

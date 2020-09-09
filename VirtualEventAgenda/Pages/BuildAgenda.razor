@@ -4,12 +4,8 @@
 @using System.Linq
 
 @inject JsonFileAgendaTopicService AgendaTopicsService
-@* TODO - get the event information out of a service/json?*@
 <h1>Agenda Bearbeiten</h1>
-@* TODO - Format of the Description*@
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis quo mollitia, reiciendis pariatur eligendi saepe sed, repudiandae, minima nostrum earum natus. Labore quos unde vel repellat magni iusto numquam libero!</p>
-
-
+<p>Aktuelle Stand der Agenda:</p>
 
 <table class="table" width="80%">
     <thead>
@@ -25,11 +21,11 @@
         @foreach (var AgendaTopic in AgendaTopics.OrderBy(t => t.OrderId ?? int.MaxValue))
         {
             <tr>
-                <td><button class="btn btn-sm btn-info" type="button" @onclick=" e => SelectAgendaTopic(AgendaTopic.Id.ToString())" data-toggle="modal" data-target="#AgandaTopicModal"><span class="glyphicon glyphicon-pencil"></span>Edit</button></td>
+                <td><button class="btn btn-sm btn-info" type="button" @onclick=" e => SelectAgendaTopic(AgendaTopic.Id.ToString())" data-toggle="modal" data-target="#AgandaTopicModal">Edit</button></td>
                 <td>@AgendaTopic.StartTime</td>
                 <td>@AgendaTopic.EndTime</td>
                 <td>@AgendaTopic.Title</td>
-                <td>@AgendaTopic.OrderId</td>
+                <td><input @bind="@AgendaTopic.OrderId" class="form-text-orderID"  /></td>
             </tr>
         }
     </tbody>
@@ -126,7 +122,14 @@
 
     void DialogSave()
     {
-        //TODO Save does not work
+        //Save the selected Item to the AgendaTopic
+        AgendaTopics.First(x => x.Id == selectedAgendaTopic.Id).Title  = selectedAgendaTopic.Title;
+        AgendaTopics.First(x => x.Id == selectedAgendaTopic.Id).StartTime  = selectedAgendaTopic.StartTime;
+        AgendaTopics.First(x => x.Id == selectedAgendaTopic.Id).EndTime  = selectedAgendaTopic.EndTime;
+        AgendaTopics.First(x => x.Id == selectedAgendaTopic.Id).PresentationUrl  = selectedAgendaTopic.PresentationUrl;
+        AgendaTopics.First(x => x.Id == selectedAgendaTopic.Id).TeamsUrl  = selectedAgendaTopic.TeamsUrl;
+        AgendaTopics.First(x => x.Id == selectedAgendaTopic.Id).OrderId  = selectedAgendaTopic.OrderId;
+        AgendaTopics.First(x => x.Id == selectedAgendaTopic.Id).Description = selectedAgendaTopic.Description;
         AgendaTopicsService.SaveAgendaTopicsAsync(AgendaTopics.ToArray()).Wait();
         showDialog = false;
     }

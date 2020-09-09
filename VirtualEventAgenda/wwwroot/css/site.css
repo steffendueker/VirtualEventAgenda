@@ -41,6 +41,11 @@ app {
             margin-left: 1.5rem;
         }
 
+.form-text-orderID {
+    display: block;
+    margin-top: .25rem;
+    width: 40px;
+}
 .main .top-row a:first-child {
     overflow: hidden;
     text-overflow: ellipsis;
@@ -149,7 +154,6 @@ app {
     background-color: lightgray;
 }
 
-}
 
 @media (max-width: 767.98px) {
     .main .top-row:not(.auth) {

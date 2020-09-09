@@ -4,33 +4,33 @@
     "Title": "Begr\u00FC\u00DFung",
     "OrderId": 1,
     "Description": "Kurze Einleitung und Vorstellung",
-    "StartTime": "09:00",
-    "EndTime": "09:30",
+    "StartTime": "09:10",
+    "EndTime": "09:25",
     "TeamsUrl": "https://www.microsoft.com",
     "PresentationUrl": "https://www.microsoft.com",
-    "BreakOutSession": null
+    "BreakOutSessions": null
   },
   {
     "Id": 2,
-    "Title": "Intro Azure IaaS Services",
+    "Title": "Intro Azure IaaS Services Part 1",
     "OrderId": 2,
     "Description": "L100 Intro in Azure IaaS Services mit vielen Demos",
     "StartTime": "09:30",
     "EndTime": "11:00",
     "TeamsUrl": null,
     "PresentationUrl": "https://www.microsoft.com",
-    "BreakOutSession": [
+    "BreakOutSessions": [
       {
         "Title": "Team A",
-        "Description": "Meeting für das erste Team",
+        "Description": "Teams-Raum f\u00FCr das erste Team",
         "TeamsUrl": "https://www.microsoft.com"
       },
       {
         "Title": "Team B",
-        "Description": "Meeting für das zweite Team",
+        "Description": "Teams-Raum f\u00FCr das zweite Team",
         "TeamsUrl": "https://www.microsoft.com"
       }
-     ]
+    ]
   },
   {
     "Id": 3,
@@ -41,18 +41,18 @@
     "EndTime": "12:00",
     "TeamsUrl": "https://www.microsoft.com",
     "PresentationUrl": "https://www.microsoft.com",
-    "BreakOutSession": null
+    "BreakOutSessions": null
   },
   {
     "Id": 4,
     "Title": "Let\u0027s talk about DBs",
     "OrderId": 4,
-    "Description": null,
+    "Description": "Demo rund um CosmosDB",
     "StartTime": "13:00",
     "EndTime": "14:30",
     "TeamsUrl": null,
     "PresentationUrl": null,
-    "BreakOutSession": null
+    "BreakOutSessions": null
   },
   {
     "Id": 5,
@@ -63,6 +63,6 @@
     "EndTime": "17:00",
     "TeamsUrl": null,
     "PresentationUrl": null,
-    "BreakOutSession": null
+    "BreakOutSessions": null
   }
 ]
