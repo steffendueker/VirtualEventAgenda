@@ -1,68 +1,90 @@
 ﻿[
   {
     "Id": 1,
-    "Title": "Begr\u00FC\u00DFung",
+    "Title": "Overview about Microsoft Cloud Adoption Framework",
     "OrderId": 1,
-    "Description": "Kurze Einleitung und Vorstellung",
-    "StartTime": "09:10",
-    "EndTime": "09:25",
+    "Description": "Give you an overview about the Microsoft Cloud Adoption Framework and the Enterprise-Scale landingzone approach.",
+    "StartTime": "10:00",
+    "EndTime": "10:45",
     "TeamsUrl": "https://www.microsoft.com",
     "PresentationUrl": "https://www.microsoft.com",
     "BreakOutSessions": null
   },
   {
     "Id": 2,
-    "Title": "Intro Azure IaaS Services Part ",
+    "Title": "First Challenge",
     "OrderId": 2,
-    "Description": "L100 Intro in Azure IaaS Services mit vielen Demos",
-    "StartTime": "09:30",
-    "EndTime": "11:00",
+    "Description": "Make an assessment of the provided on-prem environment and design a first iteration of a landing-zone",
+    "StartTime": "10:45",
+    "EndTime": "12:00",
     "TeamsUrl": null,
     "PresentationUrl": "https://www.microsoft.com",
     "BreakOutSessions": [
       {
-        "Title": "Team 1",
-        "Description": "Teams-Raum f\u00FCr das erste Team",
+        "Title": "Team A",
+        "Description": "Meeting room for the first group",
         "TeamsUrl": "https://www.microsoft.com"
       },
       {
-        "Title": "Team 1",
-        "Description": "Teams-Raum f\u00FCr das zweite Team",
+        "Title": "Team B",
+        "Description": "Meeting room for the second group",
         "TeamsUrl": "https://www.microsoft.com"
       }
     ]
   },
   {
     "Id": 3,
-    "Title": "Intro Azure PaaS Services",
+    "Title": "Lunch break",
     "OrderId": 3,
-    "Description": "L100 Intro in Azure PaaS Services mit vielen Demos",
-    "StartTime": "11:00",
-    "EndTime": "12:00",
+    "Description": "",
+    "StartTime": "12:00",
+    "EndTime": "13:00",
+    "TeamsUrl": "",
+    "PresentationUrl": "",
+    "BreakOutSessions": null
+  },
+  {
+    "Id": 4,
+    "Title": "Introduction to the critical design areas",
+    "OrderId": 4,
+    "Description": "Get a first understanding of the critical design areas in the enterprise-scale landing zone",
+    "StartTime":"13:00",
+    "EndTime": "13:45",
     "TeamsUrl": "https://www.microsoft.com",
     "PresentationUrl": "https://www.microsoft.com",
     "BreakOutSessions": null
   },
   {
-    "Id": 4,
-    "Title": "Let\u0027s talk about DBs",
-    "OrderId": 4,
-    "Description": "Demo rund um CosmosDB",
-    "StartTime": "13:00",
-    "EndTime": "14:30",
-    "TeamsUrl": null,
-    "PresentationUrl": null,
-    "BreakOutSessions": null
+    "Id": 5,
+    "Title": "Second Challenge",
+    "OrderId": 5,
+    "Description": "Build up your designed landing zone and start to migrate the in challenge one assessed workloads to the cloud. Build up the foundation of manage and govern.",
+    "StartTime": "14:00",
+    "EndTime": "16:30",
+    "TeamsUrl": "https://www.microsoft.com",
+    "PresentationUrl": "https://www.microsoft.com",
+    "BreakOutSessions": [
+      {
+        "Title": "Team A",
+        "Description": "Meeting room for the first group",
+        "TeamsUrl": "https://www.microsoft.com"
+      },
+      {
+        "Title": "Team B",
+        "Description": "Meeting room for the second group",
+        "TeamsUrl": "https://www.microsoft.com"
+      }
+    ]
   },
   {
-    "Id": 5,
-    "Title": "Intro into Cosmos DB",
-    "OrderId": 5,
-    "Description": null,
-    "StartTime": "15:00",
+    "Id": 6,
+    "Title": "Wrap-up and closing",
+    "OrderId": 6,
+    "Description": "",
+    "StartTime":"16:30",
     "EndTime": "17:00",
-    "TeamsUrl": null,
-    "PresentationUrl": null,
+    "TeamsUrl": "https://www.microsoft.com",
+    "PresentationUrl": "",
     "BreakOutSessions": null
   }
 ]
